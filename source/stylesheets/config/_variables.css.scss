@@ -1,0 +1,54 @@
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+// Google fonts
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+$base-font: "Open Sans", "Helvetica", "sans-serif";
+$header-font: "Montserrat", "sans-serif";
+
+// Local fonts (uncomment following lines)
+// @font-face {
+//   font-family: "Font Name";
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
+// }
+// $my-font: "Font Name";
+
+// Font-size and line-height
+$base-size: 16px;
+$base-height: 1.4;
+
+/* -------------------------------------
+ * Colors
+ * ------------------------------------- */
+// Scheme
+$red: #EE5F5B;
+$blue: #469AE0;
+$yellow: #FDB631;
+$yellow-lighter:#FFDE8B;
+$yellow-light:#FFEFC4;
+$orange: #E67E22;
+$green: #32B796;
+$emerald:lighten($green, 10%);
+$light-emerald:#F2FCF9;
+$purple: #6452BD;
+$whitebroken:#FFFFFF;
+$whitedarker:#FBFBFB;
+$grey:#B2B2B0;
+$whiteborder:#EEEEEE;
+$brown-darker:#645e60;
+$brown-footer: #797274;
+
+// Gray scale
+$gray-darker:  rgb(78, 78, 83); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: rgb(198, 196, 196); // #eee
+$gray-shadow: darken(#eee,30%);
+$grey-newsletter: darken(#EEEEEE, 2%);
+$grey-background:#F7F7F7;
+
+#text-muted {font-style:italic}

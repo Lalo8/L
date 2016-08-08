@@ -1,0 +1,86 @@
+#banner {
+	background-image: image_url("Jade2.jpg");
+    padding: 150px;
+    padding-top: 250px;
+<<<<<<< Updated upstream
+    height:700px;
+=======
+    height:auto;
+    weight :auto;
+>>>>>>> Stashed changes
+    color:$whitebroken;
+    font-size: 20px;
+	
+	h1 {
+	font-size: 100px;
+	}
+	
+	}
+
+.actu{
+	margin-top: 10px;
+	padding-bottom:200px;
+	padding:20px;
+	background:$whitedarker;
+	box-shadow: 2px 1px 1px &gray-darker;
+	h2{
+	font-family: "Montserrat",sans-serif;
+	font-weight: normal;
+	color:$gray-darker;
+    margin-bottom: 70px;
+    margin-top: 30px;}
+	p {
+	 color:$gray-darker;
+	}}
+	
+.crea {
+	display: inline-block;
+	margin-left: 60px;
+	margin-bottom :60px;
+<<<<<<< Updated upstream
+}
+
+
+#contact
+{   padding:70px;
+	text-align:center;
+=======
+
+		
+	}
+
+
+#contact
+{ padding: 70px;
+	text-align: center;
+>>>>>>> Stashed changes
+	border-style:solid;
+	border-width:9px 0px 9px 0px;
+	border-color: $grey-newsletter;
+
+}
+
+
+<<<<<<< Updated upstream
+=======
+
+#portfolioheading
+ 
+ { 
+ 	background-color:$red;
+ 	padding: 40px;
+    padding-top: 20px;
+    height:auto;
+    weight :auto;
+    h2,small{
+    color:white;
+    }
+    h2{
+    font-size: 46px;
+    padding-top:80px;
+    padding-left: 150px;
+    
+}
+
+}
+>>>>>>> Stashed changes
