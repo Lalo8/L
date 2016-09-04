@@ -24,7 +24,7 @@
 #   page "/admin/*"
 # end
 
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
+# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
@@ -65,12 +65,28 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+  set :relative_links, true
 
   # Or use a different image path
-
-  activate :deploy do |deploy|
-  deploy.deploy_method = :git
+  # set :http_prefix, "/Content/images/"
+  #
+  require_relative "./lib/build_cleaner"
+  activate :build_cleaner
 end
+
+# Deployment
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+
+  # Optional Settings
+  # deploy.remote = 'custom-remote' # remote name or git url, default: origin
+  # deploy.branch = 'custom-branch' # default: gh-pages
+  # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
+  # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
+Contact GitHub API Training Shop Blog About
+
   # set :http_prefix, "/Content/images/"
 end
