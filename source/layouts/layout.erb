@@ -13,7 +13,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Lalos" %></title>
 
-    <%= stylesheet_link_tag "all.css.scss" %>
+    <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,7 +50,7 @@
               <% end %>
             </li>
             <li>
-              <% link_to "/#portfolio" do %>
+              <% link_to "/portfolio.html" do %>
                 <i class="fa fa-paint-brush"></i> Portfolio
               <% end %>
             </li>
