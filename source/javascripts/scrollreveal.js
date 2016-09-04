@@ -75,8 +75,8 @@
     distance: '20px',
 
     // Time in milliseconds.
-    duration: 500,
-    delay: 0,
+    duration: 1000,
+    delay:10,
 
     // Starting angles in degrees, will transition from these values to 0 in all axes.
     rotate: { x: 0, y: 0, z: 0 },

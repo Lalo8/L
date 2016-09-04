@@ -1,5 +1,5 @@
 
-<div id="banner" class="row">
+<div id="banner" class="row foo">
   <div class="col-lg-12">
     <h1>Portfolio</h1>
     <p>Pour découvrir mes photographies & mes créations graphiques</p>
@@ -7,13 +7,13 @@
     <%=link_to "C'est par ici !" , "/portfolio.html", class: "btn btn-primary btn-lg"%> 
   </div>
    <div class="text-center" style="position: relative; top:200px;">
-    <a href="#">
+    <a href="#more">
     <i class="fa fa-angle-double-down pulse" aria-hidden="true" style="font-size:80px;color:white;"></i>
     </a>
      </div>
    </div>
 
-    <section class="actu">
+    <section class="actu" id="more">
       <div class="container  foo">
         <div class="row bloc2">
          <div class="col-lg-12">
@@ -57,7 +57,7 @@
   </section>
       
   <section id="contact">
-    <div class="container">
+    <div class="container foo">
       <h2>Pour toute demande d'informations</h2>
       <br>
        <button type="button" class="btn btn-primary bt-lg" data-toggle="modal" data-target="#message">
@@ -97,6 +97,13 @@
         </div>
       </div>
     </div>
-
   </section>
+
+  <script type="text/javascript">
+  window.sr = ScrollReveal();
+  sr.reveal('.foo');
+  sr.reveal('.bar');
+  </script>
+
+
      
