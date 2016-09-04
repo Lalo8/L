@@ -68,5 +68,9 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
+
+  activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
   # set :http_prefix, "/Content/images/"
 end
