@@ -2,7 +2,7 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.12"
+gem "middleman", "~>3.4"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
@@ -11,4 +11,12 @@ gem "middleman-livereload", "~> 3.1.0"
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+# Deploy to GitHub Pages
+gem 'middleman-deploy', '~> 1.0'
+
+# Assets
+gem 'jquery-middleman'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
