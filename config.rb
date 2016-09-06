@@ -75,7 +75,6 @@ end
 #
   require_relative "./lib/build_cleaner"
   activate :build_cleaner
-end
 
 # Deployment
 activate :deploy do |deploy|
