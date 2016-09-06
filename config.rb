@@ -72,9 +72,6 @@ configure :build do
 
   # set :http_prefix, "/Content/images/"
 end
-#
-  require_relative "./lib/build_cleaner"
-  activate :build_cleaner
 
 # Deployment
 activate :deploy do |deploy|
