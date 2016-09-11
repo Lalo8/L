@@ -2,9 +2,10 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700|Baloo+Tamma:400,700");
 $base-font: "Open Sans", "Helvetica", "sans-serif";
 $header-font: "Montserrat", "sans-serif";
+$logo-font:"Baloo Tamma";
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -26,6 +27,7 @@ $base-height: 1.4;
 // Scheme
 $red: #EE5F5B;
 $blue: #469AE0;
+$bluelogo:#3174ff;
 $yellow: #FDB631;
 $yellow-lighter:#FFDE8B;
 $yellow-light:#FFEFC4;
