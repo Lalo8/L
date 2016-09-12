@@ -7291,7 +7291,7 @@ button.close {
 /* line 4, /Users/elodiewanang/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_core.scss */
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
