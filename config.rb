@@ -53,6 +53,14 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+helpers do 
+  def find_author(author)
+   result = data.authors.select {|a| a.keys.first == author}
+   raise ArgumentError unless result.any?
+   result.first
+  end
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -84,4 +92,15 @@ activate :deploy do |deploy|
   # deploy.branch = 'custom-branch' # default: gh-pages
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
+
+activate :blog do |blog|
+  blog.layout = "article_layout"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+  blog.prefix = "bl"
+  blog.default_extension = ".md"
+  blog.sources = "posts/{year}/{month}/{day}-{title}.html"
+  blog.permalink = "posts/{year}/{month}/{day}-{title}.html"
+
 end
